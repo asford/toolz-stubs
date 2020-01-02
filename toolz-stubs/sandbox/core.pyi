@@ -1,4 +1,4 @@
-from toolz.itertoolz import cons as cons, getter as getter, pluck as pluck
+from ..itertoolz import cons as cons, getter as getter, pluck as pluck
 from typing import Any
 
 class EqualityHashKey:
