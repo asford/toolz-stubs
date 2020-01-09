@@ -1,6 +1,7 @@
 from typing_extensions import Protocol
-from typing import Any, Generic, TypeVar
+from typing import Any, Generic, Mapping, TypeVar
 
+P = TypeVar("P")
 T = TypeVar("T")
 U = TypeVar("U")
 V = TypeVar("V")
@@ -19,3 +20,6 @@ class RandomLike(Protocol):
 
 class HasGetItem(Protocol, Generic[CT, OU]):
     def __getitem__(self, item: CT) -> OU: ...
+
+class MappingFactory(Generic[T, U]):
+    def __call__(self) -> Mapping[T, U]: ...
