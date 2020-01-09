@@ -1,6 +1,8 @@
 from typing_extensions import Protocol
 from typing import Any, Generic, Mapping, TypeVar
 
+M = TypeVar("M", bound=Mapping)
+
 P = TypeVar("P")
 T = TypeVar("T")
 U = TypeVar("U")
