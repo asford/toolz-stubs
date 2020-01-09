@@ -3,6 +3,14 @@ from typing import Any, Generic, TypeVar
 
 T = TypeVar("T")
 U = TypeVar("U")
+V = TypeVar("V")
+
+HTU_ = HasGetItem[T, U]
+HVU_ = HasGetItem[V, U]
+
+HTU = TypeVar("HTU", bound=HTU_)
+HVU = TypeVar("HVU", bound=HVU_)
+
 CT = TypeVar("CT", contravariant=True)
 OU = TypeVar("OU", covariant=True)
 
