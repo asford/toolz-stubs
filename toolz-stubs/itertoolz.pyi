@@ -1,15 +1,7 @@
 from typing import overload, Any, Callable, Iterable, Iterator, Mapping, List, Optional, Tuple, TypeVar, Union
 from ._typing import HasGetItem, RandomLike
+from ._typing import T, U, V, HTU, HVU
 
-T = TypeVar("T")
-U = TypeVar("U")
-V = TypeVar("V")
-
-HTU_ = HasGetItem[T, U]
-HVU_ = HasGetItem[V, U]
-
-HTU = TypeVar("HTU", bound=HTU_)
-HVU = TypeVar("HVU", bound=HVU_)
 
 
 def remove(predicate: Optional[Callable[[T], object]], seq: Iterable[T]) -> Iterator[T]: ...
