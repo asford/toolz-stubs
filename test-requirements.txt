@@ -1,0 +1,2 @@
+git+https://github.com/python/mypy.git@master
+git+https://github.com/pytoolz/toolz.git@master

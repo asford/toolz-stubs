@@ -1,0 +1,12 @@
+dist: bionic
+sudo: false
+language: python
+python: 3.8
+cache: pip
+
+before_install:
+- pip install -r test-requirements.txt
+- pip install .
+    
+script:
+- mypy -p toolz-stubs
