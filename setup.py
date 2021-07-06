@@ -8,7 +8,7 @@ import os
 
 setup(
     name="toolz-stubs",
-    version="0.10.0.dev0",
+    version="0.11.0.dev0",
     description="A collection of toolz stub files",
     long_description=(
         open("README.rst").read() if os.path.exists("README.rst") else ""
@@ -16,7 +16,7 @@ setup(
     url="https://github.com/zero323/toolz-stubs",
     packages=["toolz-stubs", "toolz-stubs.sandbox", "toolz-stubs.curried",],
     package_data={"": ["*.pyi", "py.typed"]},
-    install_requires=["toolz>=0.10.0,<0.11.0"],
+    install_requires=["toolz>=0.11.0,<0.12.0"],
     classifiers=[
         "Programming Language :: Python :: 3 :: Only",
         "Development Status :: 4 - Beta",
